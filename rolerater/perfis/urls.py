@@ -19,5 +19,5 @@ from perfis import views
 
 urlpatterns = [    
     url(r'^$', views.index, name='index'),
-    url(r'^perfis/\d+$', views.exibir, name='exibir')
+    url(r'^\d+$', views.exibir, name='exibir')
 ]
